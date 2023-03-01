@@ -1,0 +1,282 @@
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body
+{
+    background: rgb(166, 223, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    min-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .izquierda
+{
+    position: relative;
+    background: rgb(57, 138, 214);
+    padding: 40px;
+}
+
+.Perfil
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.Perfil .FotoPerfil
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Perfil .FotoPerfil img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(200,245,179);
+}
+
+.Perfil h2
+{
+    color: #b9ecaf;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.Perfil h2 span
+{
+    font-size: 0.8em;
+    font-weight: 250;
+}
+
+
+.InfoContacto
+{
+    padding-top: 40px;
+}
+
+.título
+{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.InfoContacto ul
+{
+    position: relative;
+}
+
+.InfoContacto ul li
+{
+    list-style: none; /*Quita los "puntos" que vienen por defecto en las listas */
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.InfoContacto ul li .ícono
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #1bf3a0;
+}
+
+.InfoContacto ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.InfoContacto.educación li
+{
+    margin-bottom: 15px;
+}
+
+.InfoContacto.educación h5
+{
+    color: aqua;
+    font-weight: 500;
+}
+
+.InfoContacto.educación h4:nth-child(3)
+{
+    color: #bee5ec;
+    font-weight: 500;
+}
+
+.InfoContacto.educación h4
+{
+    color: #bee5ec;
+    font-weight: 350;
+}
+
+.InfoContacto.lenguaje .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #2c2b2b;
+    display: block;
+    margin-top: 4px;
+}
+
+.InfoContacto.lenguaje .porcentaje div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #dbeb82;
+}
+
+
+.container .derecha
+{
+    position: relative;
+    background: rgb(196, 222, 240);
+    padding: 40px;
+}
+
+.sobre
+{
+    margin-bottom: 50px;
+}
+
+.sobre:last-child
+{
+    margin-bottom: 0;
+}
+
+.título2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p
+{
+    color: #333;
+    text-align: justify;
+}
+
+.sobre .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.sobre .box .Año
+{
+    min-width: 150px;
+}
+
+.sobre .box .Año h5
+{
+    text-transform: uppercase;
+    color: #046c7e;
+    font-weight: 650;
+}
+
+.sobre .box .texto h4
+{
+    text-transform: uppercase;
+    color: #5e1208;
+    font-size: 16px;
+}
+
+.informática .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.informática .box h4
+{
+    text-transform: uppercase;
+    color: rgb(3, 5, 80);
+    font-weight: 500;
+}
+
+.informática .box .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #5f5d5c;
+}
+
+.informática .box .porcentaje div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: hsla(101, 29%, 55%, 0.932);
+}
+
+.red ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.red ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.red ul li .fa
+{
+    color: rgb(46, 33, 240);
+    font-size: 18px;
+    width: 20px;
+}
